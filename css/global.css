@@ -1,8 +1,62 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url('./fonts/worksans-black.ttf') format('truetype');
+    /* src: url('./fonts/spacegrotesk-medium.otf') format('truetype'); */
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('./fonts/worksans-black.ttf') format('truetype');
+    /* src: url('./fonts/spacegrotesk-medium.otf') format('truetype'); */
+}
+
 * {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
     text-decoration: none;
     border-style: none;
+    color: #1B2F3A;
    
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    background-color: #F0E3DA;
+    font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+}
+
+/* HEADER */
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px 40px; */
+}
+
+
+.header__action--burguer {
+    padding-left: 10px;
+    padding-right: 10px;  
+}
+
+/* .header__logo {
+margin-top: 20px;
+} */
+
+.header__action {
+    padding: 5px 10px;  
+    background-color: #D5583C;
+    color: #F0E3DA;
+    border-radius: 20px;
+    font-size: 7px;
+    font-weight: bold;
+}
+
+
+
+/* HEADER */
