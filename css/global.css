@@ -49,7 +49,7 @@ html {
 
 
 .header__logo {
-    margin-top: -0.5rem;
+    margin-top: 0.5rem;
 }
 
 .header__action {
@@ -209,6 +209,8 @@ html {
     box-shadow: 0 2px 5px #af3519;
 }
 
+
+
 .cards__image {
     width: 100%;
     max-width: 100%;
@@ -228,6 +230,7 @@ html {
     font-size: 1.2rem;
     margin-left: 1rem;
     background-color: #fef7f1;
+    color: #1B2F3A;
 }
 
 .cards__location {
@@ -235,7 +238,6 @@ html {
     margin-bottom: 5px;
     margin-top: 1em;
     background: none;
-    color: #333;
 }
 
 .card__h2 {
@@ -244,7 +246,6 @@ html {
 
     font-weight: bold;
     background: none;
-    color: #333;
 }
 
 .cards__link {
@@ -262,9 +263,6 @@ html {
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
-
-
-
 }
 
 .cards__find-more {
@@ -272,4 +270,122 @@ html {
     justify-content: center;
     font-size: 1.2rem;
     margin: 1rem 0rem 2rem 0rem;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #1B2F3A; 
+    padding: 1.8rem 1rem;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer__links {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-content: center;
+
+    background: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.footer__link {
+    list-style: none;
+    text-decoration: none;
+
+    background: none;
+    color: #fef7f1;
+}
+
+/* DANA PAGE · DANA PAGE · DANA PAGE */
+
+
+/* HEADER DANA */
+
+.emergency__dana {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    margin-top: 2rem;
+}
+
+.header__dana {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__dana-advice {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.2rem;
+
+    margin-bottom: 1rem;
+}
+
+.header__dana-txt {
+    color: #D5583C;
+
+}
+.header__dana-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+    background-color: #D5583C;
+    box-shadow: 0 2px 5px #af3519; box-shadow: 0 2px 5px #af3519;
+
+    margin-right: 0.4rem;
+}
+
+.header__dana-img {
+    border-radius: 5px;
+}
+
+/* INTRO DANA */
+
+.intro__dana {
+ margin-top: 2rem;
+ margin-bottom: 2rem;
+}
+
+.intro__dana-h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.intro__dana-h5 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.intro__dana-txt {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+
+}
+
+/* MAPA DANA */
+
+.mapa__dana {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.mapa__dana-h2 {
+    display: flex;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.mapa__dana-iframe {
+    display: flex;
+   width: 100%;
 }
