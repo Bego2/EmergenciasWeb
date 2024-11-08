@@ -1,18 +1,17 @@
 @font-face {
     font-family: 'Work Sans';
     src: url('./fonts/worksans-black.ttf') format('truetype');
-    /* src: url('./fonts/spacegrotesk-medium.otf') format('truetype'); */
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Space Grotesk';
-    src: url('./fonts/spacegrotesk-medium.otf') format('truetype');
-    /* src: url('./fonts/spacegrotesk-medium.otf') format('truetype'); */
-}
+    src: url('./fonts/spacegrotesk-medium.otf') format('truetype')     
+} */
 
 html {
     font-size: 12px;
 }
+
 * {
     box-sizing: border-box;
     padding: 0px;
@@ -20,16 +19,16 @@ html {
     text-decoration: none;
     border-style: none;
     color: #1B2F3A;
-    font-family:'Space Grotesk', Helvetica, Arial, sans-serif;;
-    
+    background-color: #F0E3DA;
+    font-family: 'Space Grotesk', Helvetica, Arial, sans-serif;
+    ;
+
 }
 
 .container {
     display: flex;
     flex-direction: column;
     height: 100vh;
-
-    background-color: #F0E3DA;
 }
 
 /* HEADER */
@@ -38,20 +37,20 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+
 }
 
-
-.header__burguer  {
+.header__burguer.fa.fa-bars {
     margin-left: 10px;
     padding-right: 10px;
     margin-top: -1rem;
+    font-size: 18px;
 }
 
 
 .header__logo {
-margin-top: -0.5rem;
-} 
+    margin-top: -0.5rem;
+}
 
 .header__action {
     background-color: #D5583C;
@@ -61,7 +60,7 @@ margin-top: -0.5rem;
     font-size: 12px;
     font-weight: bold;
 
-    padding: 5px 10px 6px 10px;  
+    padding: 5px 10px 6px 10px;
     margin-right: 5px;
     margin-top: -1rem;
 
@@ -77,13 +76,13 @@ margin-top: -0.5rem;
 
 .call-action__img {
     height: 100%;
-    width: 100%; 
-    height: auto;  
+    width: 100%;
+    height: auto;
     max-width: 100vw;
 
     margin-top: 2rem;
 }
- 
+
 
 /* SECCION 2: FILTRADO */
 
@@ -96,20 +95,181 @@ margin-top: -0.5rem;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 3rem; 
-    
+    padding: 2rem 3rem;
+
 }
 
 .filter__search {
     flex: 1;
     max-width: 100%;
     padding: 1rem 1.7rem;
-    margin: 1rem 0.5rem;
+    margin: 1rem 2rem 1rem 1rem;
+    /* margin right more */
 
     border-radius: 20px;
     outline: none;
     font-size: 1rem;
     font-weight: 300;
+    background-color: #fef7f1;
 }
 
 /* SECTION 3 */
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+
+.cards__1 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 90%;    /* Antes tenía max-width, corregido a width */
+
+    background-color: #fef7f1;
+    border-radius: 12px;
+    overflow: hidden;
+    /* Para asegurar que el borde redondeado funcione correctamente */
+    margin-bottom: 2rem;
+}
+
+.cards__2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 90%; 
+
+    background-color: #fef7f1;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.cards__3 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 90%; 
+
+    background-color: #fef7f1;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+
+.cards__4 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 90%;   
+    background-color: #fef7f1;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+/* Tarjeta parte izq */
+
+.cards__header {
+    position: relative;
+    display: flex;
+    width: 40%;
+}
+
+.cards__date {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+
+    display: inline-flex;
+    align-items: center;
+    background: none;
+}
+
+.cards__txt {
+    background: none;
+    font-weight: bold;
+}
+
+
+.cards__date-circle {
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #D5583C;
+
+    margin-right: 0.2rem;
+
+    box-shadow: 0 2px 5px #af3519;
+}
+
+.cards__image {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 12px 0 0 12px;
+
+}
+
+/* Tarjeta parte drcha */
+
+.cards__header-link {
+    cursor: pointer;
+}
+
+.cards__text {
+    width: 60%;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    background-color: #fef7f1;
+}
+
+.cards__location {
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-top: 1em;
+    background: none;
+    color: #333;
+}
+
+.card__h2 {
+    font-size: 1.8em;
+    /* line-height: 1em; */
+
+    font-weight: bold;
+    background: none;
+    color: #333;
+}
+
+.cards__link {
+    width: auto;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    text-align: right;
+    margin-top: 10px;
+
+    background: none;
+    color: #D5583C;
+
+    font-size: 0.8em;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+
+
+}
+
+.cards__find-more {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin: 1rem 0rem 2rem 0rem;
+}
