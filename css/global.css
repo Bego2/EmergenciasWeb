@@ -128,7 +128,8 @@ html {
     position: relative;
     display: flex;
     flex-direction: row;
-    width: 90%;    /* Antes tenía max-width, corregido a width */
+    width: 90%;
+    /* Antes tenía max-width, corregido a width */
 
     background-color: #fef7f1;
     border-radius: 12px;
@@ -141,7 +142,7 @@ html {
     position: relative;
     display: flex;
     flex-direction: row;
-    width: 90%; 
+    width: 90%;
 
     background-color: #fef7f1;
     border-radius: 12px;
@@ -153,7 +154,7 @@ html {
     position: relative;
     display: flex;
     flex-direction: row;
-    width: 90%; 
+    width: 90%;
 
     background-color: #fef7f1;
     border-radius: 12px;
@@ -166,7 +167,7 @@ html {
     position: relative;
     display: flex;
     flex-direction: row;
-    width: 90%;   
+    width: 90%;
     background-color: #fef7f1;
     border-radius: 12px;
     overflow: hidden;
@@ -275,7 +276,7 @@ html {
 /* FOOTER */
 
 .footer {
-    background-color: #1B2F3A; 
+    background-color: #1B2F3A;
     padding: 1.8rem 1rem;
     display: flex;
     text-decoration: none;
@@ -310,7 +311,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 1rem;
+    margin: 1.5rem;
     margin-top: 2rem;
 }
 
@@ -332,13 +333,15 @@ html {
     color: #D5583C;
 
 }
+
 .header__dana-circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
 
     background-color: #D5583C;
-    box-shadow: 0 2px 5px #af3519; box-shadow: 0 2px 5px #af3519;
+    box-shadow: 0 2px 5px #af3519;
+    box-shadow: 0 2px 5px #af3519;
 
     margin-right: 0.4rem;
 }
@@ -350,8 +353,8 @@ html {
 /* INTRO DANA */
 
 .intro__dana {
- margin-top: 2rem;
- margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .intro__dana-h2 {
@@ -387,5 +390,168 @@ html {
 
 .mapa__dana-iframe {
     display: flex;
-   width: 100%;
+    width: 100%;
 }
+
+
+/* CENTERS DANA */
+
+.centers__dana {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.centers__dana-h2 {
+    display: flex;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.centers__dana-txt {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.cards__centers {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 1rem 1.5rem;
+
+}
+
+/* Tarjeta parte izquierda */
+
+.cards__izquierda {
+    display: flex;
+    width: 150px;
+
+    justify-content: center;
+    background-color: #D5583C;
+    padding: 2rem;
+
+    border-radius: 12px 0px 0px 12px;
+}
+
+
+.cards__txt {
+    display: flex;
+    background: none;
+    color: #593436;
+    font-size: 1.5rem;
+}
+
+.cards__derecha {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.cards__list {
+    padding: 2rem;
+    background-color: #FFF9F5;
+    border-radius: 0px 12px 12px 0px;
+}
+
+strong {
+    background: none;
+}
+
+.cards__listInfo {
+    background: none;
+    list-style: none;
+    margin-bottom: 1rem;
+
+}
+
+
+
+.cards__listInfo-under {
+    text-decoration: underline;
+}
+
+/* Cards version 2: CATARROJA  */
+.cards__izquierda.cards__izquierda--2 {
+    background-color: #593436;
+    width: 150px;
+}
+
+.cards__txt.cards__txt--2 {
+    color: #C6C54D;
+    width: 150px;
+}
+
+/* Cards version 2: SEDAVÍ  */
+.cards__izquierda.cards__izquierda--3 {
+    background-color: #C6C54D;
+
+}
+
+.cards__txt.cards__txt--3 {
+    color: #593436;
+}
+
+
+/* DONATION FORM */
+
+.form__dana-h2 {
+    display: flex;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.form__dana-txt {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+
+.form__dana {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__eurosText {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.form__eurosImput {
+    width: 45%;
+    height: 30px;
+    background-color: #FFF9F5;
+    color: #a6a9c5;
+    /* border: 1px solid #1B2F3A;  */
+    border-radius: 20px;
+    text-align: right;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+
+.form__payment {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__paymentStyle { 
+display: flex;
+flex-direction: row;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+.creditodebito {
+    width: 20px;
+    height: 20px;
+    font-size: 1rem;
+}
+
