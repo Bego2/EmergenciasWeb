@@ -207,7 +207,7 @@ html {
 
     margin-right: 0.2rem;
 
-    box-shadow: 0 2px 5px #af3519;
+    box-shadow: 0 1px 7px #ff6b4a;
 }
 
 
@@ -331,7 +331,6 @@ html {
 
 .header__dana-txt {
     color: #D5583C;
-
 }
 
 .header__dana-circle {
@@ -340,9 +339,7 @@ html {
     border-radius: 50%;
 
     background-color: #D5583C;
-    box-shadow: 0 2px 5px #af3519;
-    box-shadow: 0 2px 5px #af3519;
-
+    box-shadow: 0 1px 7px #ff6b4a;
     margin-right: 0.4rem;
 }
 
@@ -427,7 +424,7 @@ html {
 
 .cards__izquierda {
     display: flex;
-    width: 150px;
+    min-width: 150px;
 
     justify-content: center;
     background-color: #D5583C;
@@ -440,8 +437,8 @@ html {
 .cards__txt {
     display: flex;
     background: none;
-    color: #593436;
-    font-size: 1.5rem;
+    color:#1B2F3A;
+    font-size: 1rem;
 }
 
 .cards__derecha {
@@ -468,8 +465,6 @@ strong {
 
 }
 
-
-
 .cards__listInfo-under {
     text-decoration: underline;
 }
@@ -477,12 +472,12 @@ strong {
 /* Cards version 2: CATARROJA  */
 .cards__izquierda.cards__izquierda--2 {
     background-color: #593436;
-    width: 150px;
+
 }
 
 .cards__txt.cards__txt--2 {
     color: #C6C54D;
-    width: 150px;
+
 }
 
 /* Cards version 2: SEDAVÍ  */
@@ -524,14 +519,16 @@ strong {
 }
 
 .form__eurosImput {
-    width: 45%;
+    min-width: 45%;
     height: 30px;
+    padding: 2rem;
+    padding-left: 2.8rem;
+
     background-color: #FFF9F5;
     color: #a6a9c5;
-    /* border: 1px solid #1B2F3A;  */
     border-radius: 20px;
-    text-align: right;
-    padding: 2rem;
+
+    text-align: left;
     font-size: 2rem;
 }
 
@@ -541,17 +538,68 @@ strong {
     flex-direction: column;
 }
 
-.form__paymentStyle { 
-display: flex;
-flex-direction: row;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.form__paymentStyle {
+    display: flex;
+    flex-direction: row;
+    min-width: 45%;
+    height: 30px;
+    align-items: center;
+    font-size: 1.4rem;
+    background-color: #FFF9F5;
+    border-radius: 20px;
+    align-content: left;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.form__paymentImput {
+    display: flex;
+    width: 21px;
+    height: 21px;
+    background-color: #FFF9F5;
+    margin-right: 1em;
+}
+
+
+.form__label {
+    display: flex;
+    background-color: #FFF9F5;
+}
+
+.form__checkbox {
+    margin-right: 1em;
+    width: 17px;
+    height: 17px;
+    margin-left: 2em;
 
 }
-.creditodebito {
-    width: 20px;
-    height: 20px;
-    font-size: 1rem;
+
+.form__checkboxStyle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3rem;
 }
 
+.form__checkboxLabel {
+    font-size: 1.2rem;
+
+}
+
+.botonDonar {
+    display: flex;
+    flex-direction: row;
+    min-width: 45%;
+    height: 30px;
+    background-color:#D5583C;
+    color: #F0E3DA;
+
+    justify-content: center;
+    align-items: center;
+ 
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    border-radius: 30px;
+    padding: 2rem;
+}

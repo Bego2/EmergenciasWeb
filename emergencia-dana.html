@@ -126,7 +126,7 @@
                         <!-- Tarjeta parte izq -->
                         <div class="cards__izquierda cards__izquierda--2">
 
-                            <p class="cards__txt cards__txt--2"> Catarroja</p>
+                            <p class="cards__txt cards__txt--2">Catarroja</p>
 
                         </div>
 
@@ -193,28 +193,30 @@
                     </p>
 
                     <form>
-                        <label class="form__eurosText" for="cantidad"> Cantidad a donar (€) </label>
+                        <label class="form__eurosText" for="cantidad"> Donation amount (€) </label>
                         <input class="form__eurosImput" type="number" min="0" step="0.01" value="0.00">
                     </form>
 
 
                     <form class="form__payment">
-                        <p class="form__eurosText">Tipo de pago</p>
-                        <div class="form__paymentStyle">
-                         
-                            <input class="form__paymentType" type="radio" name="pago" value="creditodebito">
-                            <label class="creditodebito"  for="creditodebito">Crédito o débito</label>
+
+                        <p class="form__eurosText">Type of payment</p>
+
+                        <div class="form__paymentStyle">  
+                            <input class="form__paymentImput" type="radio" name="pago" value="creditodebito">
+                            <label class="form__label"  for="creditodebito">Credit or debit</label>
                         </div>
 
-                        <div class="form_paymentStyle">
-                            <input id="paypal" type="radio" name="pago" value="paypal" checked>
-                            <label for="paypal">Paypal</label>
+
+                        <div class="form__paymentStyle">
+                            <input class="form__paymentImput" type="radio" name="pago" value="paypal" checked>
+                            <label class="form__label" for="paypal">Paypal</label>
                         </div>
                     </form>
 
-                    <form>
-                        <input id="anonimo" type="checkbox" name="anonimo">
-                        <label for="anonimo">No mostrar mi nombre públicamente</label>
+                    <form class="form__checkboxStyle">
+                        <input class="form__checkbox" type="checkbox" name="anonimo">
+                        <label class="form__checkboxLabel" for="anonimo">Don't show my name publicly</label>
                     </form>
 
                     <button class="botonDonar" type="submit"> DONATE </button>
@@ -239,13 +241,13 @@
 
         </main>
 
-        <!-- <footer class="footer">
+        <footer class="footer">
             <ul class="footer__links">
                 <li class="footer__link">Global Answer® 2024</li>
                 <li class="footer__link">Cookies</li>
                 <li class="footer__link">Términos & Condiciones</li>
             </ul>
-        </footer> -->
+        </footer>
 
 </body>
 
