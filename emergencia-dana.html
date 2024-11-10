@@ -22,24 +22,44 @@
 
 <body>
 
-    <section class="container">
+    <section class="container__grid">
 
-        <header class="header">
+        <header class="header__fixed">
 
             <nav class="header__navbar">
                 <i class="header__burguer fa fa-bars" aria-hidden="true"> </i>
 
-                <img class="header__logo" src="/img/logo.svg"
-                    alt="logo de Global answer, escrito le rodea un óvalo naranja">
-
-                <a class="header__action" href="index.html"> Support </a>
+                <a href="index.html"> <img class="header__logo" src="/img/logo.svg"
+                        alt="logo de Global answer, escrito le rodea un óvalo naranja"> </a>
+                <a class="header__action" href="index.html"> Donate </a>
             </nav>
 
         </header>
 
-        <main>
+        <main class="main__emergencia-dana">
+            <aside>
 
-            <article class="emergency__dana">
+                <img class="aside__img-emergency" src="img/aside-emergency.svg"
+                    alt="in white letters you can read emergency number 112, background color is marine blue">
+
+
+                <nav class="nav__intern">
+                    <h3 class="nav__intern-title"> <a class="nav__links" href="#" data-target="intro"> Dana </a> </h3>
+                    <ul class="nav__internList">
+                        <li class="nav__internList-items"> <a class="nav__links" href="#" data-target="map">Map</a>
+                        </li>
+                        <li class="nav__internList-items"> <a class="nav__links" href="#" data-target="centers">Help
+                                Centers</a> </li>
+                        <li class="nav__internList-items"> <a class="nav__links" href="#" data-target="faq">FAQ</a>
+                        </li>
+                        <li class="nav__internList-items"><a class="nav__links" href="#" data-target="donate">
+                                Donate</a> </li>
+                    </ul>
+                </nav>
+
+            </aside>
+
+            <article class="article__emergencia-dana">
 
                 <header class="header__dana">
                     <span class="header__dana-advice">
@@ -51,7 +71,7 @@
                         alt="Valencia's flood, cars destroyed">
                 </header>
 
-                <section class="intro__dana">
+                <section class="intro__dana" data-section="intro">
                     <h2 class="intro__dana-h2">
                         Dana
                     </h2>
@@ -69,7 +89,7 @@
                     </p>
                 </section>
 
-                <section class="mapa__dana">
+                <section class="mapa__dana" data-section="map">
 
                     <h2 class="mapa__dana-h2">
                         Map
@@ -80,7 +100,7 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </section>
 
-                <section class="centers__dana">
+                <section class="centers__dana" data-section="centers">
 
                     <h2 class="centers__dana-h2">
                         Help centers
@@ -92,97 +112,146 @@
 
                     </p>
 
-                    <!-- Tarjetas: Centers -->
-                    <div class="cards__centers">
+                    <div class="cards__grid">
+                        <div class="cards__centers">
 
-                        <!-- Tarjeta parte izq -->
-                        <div class="cards__izquierda">
+                            <!-- Tarjeta parte izq -->
+                            <div class="cards__izquierda">
 
-                            <p class="cards__txt">Paiporta</p>
+                                <p class="cards__txt">Paiporta</p>
 
+                            </div>
+
+                            <!-- Tarjeta parte derecha -->
+                            <div class="cards__derecha">
+                                <ul class="cards__list">
+                                    <li class="cards__listInfo"> <strong> Location</strong> <br> Tarazona, Carrer Músic
+                                        Vicent Prats, <br> 46200 Paiporta, Valencia </li>
+                                    <li class="cards__listInfo"> <strong> Alert level</strong> <br> High. Help is barely
+                                        coming.</li>
+
+                                    <li class="cards__listInfo">
+                                        <strong> Offers </strong><br> Accommodation, food, hot showers, washing
+                                        machines.
+                                        <br> They need Water pumps, hygiene products, <br> toys, sanitary volunteers.
+
+                                        <a class="cards__listInfo-link" href="https://web.telegram.org/k/"
+                                            target="_blank">
+                                    <li class="cards__listInfo cards__listInfo-under"> <strong> Telegram Group </strong>
+                                    </li>
+                                    </a>
+
+                                </ul>
+                            </div>
                         </div>
 
-                        <!-- Tarjeta parte derecha -->
-                        <div class="cards__derecha">
-                            <ul class="cards__list">
-                                <li class="cards__listInfo"> <strong> Location</strong> <br> Tarazona, Carrer Músic
-                                    Vicent Prats, <br> 46200 Paiporta, Valencia </li>
-                                <li class="cards__listInfo"> <strong> Alert level</strong> <br> High. Help is barely
-                                    coming.</li>
+                        <div class="cards__centers cards__centers--2">
 
-                                <li class="cards__listInfo">
-                                    <strong> Offers </strong><br> Accommodation, food, hot showers, washing machines.
-                                    <br> They need Water pumps, hygiene products, <br> toys, sanitary volunteers.
-                                </li>
-                                <li class="cards__listInfo cards__listInfo-under"> <strong> Telegram Group </strong>
-                                </li>
+                            <!-- Tarjeta parte izq -->
+                            <div class="cards__izquierda cards__izquierda--2">
 
-                            </ul>
+                                <p class="cards__txt cards__txt--2">Catarroja</p>
+
+                            </div>
+
+                            <!-- Tarjeta parte derecha -->
+                            <div class="cards__derecha">
+                                <ul class="cards__list">
+                                    <li class="cards__listInfo"> <strong> Location</strong> <br>Avenida Camí Real 22,
+                                        <br> 46470 Catarroja, Valencia
+                                    </li>
+                                    <li class="cards__listInfo"> <strong> Alert level</strong> <br> High. Help is barely
+                                        coming.</li>
+
+                                    <li class="cards__listInfo">
+                                        <strong> Offers </strong><br> Accommodation, food, hot showers, washing
+                                        machines.
+                                        <br> They need Water pumps, hygiene products, <br> toys, sanitary volunteers.
+
+                                        <a class="cards__listInfo-link" href="https://web.telegram.org/k/"
+                                            target="_blank">
+                                    <li class="cards__listInfo cards__listInfo-under"> <strong> Telegram Group </strong>
+                                    </li>
+                                    </a>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="cards__centers cards__centers--3">
+
+                            <!-- Tarjeta parte izq -->
+                            <div class="cards__izquierda cards__izquierda--3">
+
+                                <p class="cards__txt cards__txt--3"> Sedaví</p>
+
+                            </div>
+
+                            <!-- Tarjeta parte derecha -->
+                            <div class="cards__derecha">
+                                <ul class="cards__list">
+                                    <li class="cards__listInfo"> <strong> Location</strong> <br>Plaza Jaume I, 5,
+                                        <br>46910 Sedavi, Valencia
+                                    </li>
+                                    <li class="cards__listInfo"> <strong> Alert level</strong> <br> High. Help is barely
+                                        coming.</li>
+
+                                    <li class="cards__listInfo">
+                                        <strong> Offers </strong><br> Accommodation, food, hot showers, washing
+                                        machines.
+                                        <br> They need Water pumps, hygiene products, <br> toys, sanitary volunteers.
+
+
+                                        <a class="cards__listInfo-link" href="https://web.telegram.org/k/"
+                                            target="_blank">
+                                    <li class="cards__listInfo cards__listInfo-under"> <strong> Telegram Group </strong>
+                                    </li>
+                                    </a>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="cards__centers cards__centers--4">
+
+                            <!-- Tarjeta parte izq -->
+                            <div class="cards__izquierda cards__izquierda--4">
+
+                                <p class="cards__txt cards__txt--4"> Chiva </p>
+
+                            </div>
+
+                            <!-- Tarjeta parte derecha -->
+                            <div class="cards__derecha">
+                                <ul class="cards__list">
+                                    <li class="cards__listInfo"> <strong> Location</strong> <br>Plaza Gil Escartí s/n
+                                        <br> 46370 Chiva, Valencia
+                                    </li>
+                                    <li class="cards__listInfo"> <strong> Alert level</strong> <br> High. Help is barely
+                                        coming.</li>
+
+                                    <li class="cards__listInfo">
+                                        <strong> Offers </strong><br> Accommodation, food, hot showers, washing
+                                        machines.
+                                        <br> They need Water pumps, hygiene products, <br> toys, sanitary volunteers.
+                                    </li>
+
+                                    <a class="cards__listInfo-link" href="https://web.telegram.org/k/" target="_blank">
+                                        <li class="cards__listInfo cards__listInfo-under"> <strong> Telegram Group
+                                            </strong>
+                                        </li>
+                                    </a>
+
+                                </ul>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="cards__centers cards__centers--2">
-
-                        <!-- Tarjeta parte izq -->
-                        <div class="cards__izquierda cards__izquierda--2">
-
-                            <p class="cards__txt cards__txt--2">Catarroja</p>
-
-                        </div>
-
-                        <!-- Tarjeta parte derecha -->
-                        <div class="cards__derecha">
-                            <ul class="cards__list">
-                                <li class="cards__listInfo"> <strong> Location</strong> <br>Avenida Camí Real 22,
-                                    <br> 46470 Catarroja, Valencia
-                                </li>
-                                <li class="cards__listInfo"> <strong> Alert level</strong> <br> High. Help is barely
-                                    coming.</li>
-
-                                <li class="cards__listInfo">
-                                    <strong> Offers </strong><br> Accommodation, food, hot showers, washing machines.
-                                    <br> They need Water pumps, hygiene products, <br> toys, sanitary volunteers.
-                                </li>
-                                <li class="cards__listInfo cards__listInfo-under"> <strong> Telegram Group </strong>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="cards__centers cards__centers--3">
-
-                        <!-- Tarjeta parte izq -->
-                        <div class="cards__izquierda cards__izquierda--3">
-
-                            <p class="cards__txt cards__txt--3"> Sedaví</p>
-
-                        </div>
-
-                        <!-- Tarjeta parte derecha -->
-                        <div class="cards__derecha">
-                            <ul class="cards__list">
-                                <li class="cards__listInfo"> <strong> Location</strong> <br>Plaza Jaume I, 5,
-                                    <br>46910 Sedavi, Valencia
-                                </li>
-                                <li class="cards__listInfo"> <strong> Alert level</strong> <br> High. Help is barely
-                                    coming.</li>
-
-                                <li class="cards__listInfo">
-                                    <strong> Offers </strong><br> Accommodation, food, hot showers, washing machines.
-                                    <br> They need Water pumps, hygiene products, <br> toys, sanitary volunteers.
-                                </li>
-                                <li class="cards__listInfo cards__listInfo-under"> <strong> Telegram Group </strong>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-
 
                 </section>
 
-                <section class="form_dana">
+                <section> </section>
+
+                <section class="form__dana" data-section="donate">
                     <h2 class="form__dana-h2">
                         Your answer to the world
                     </h2>
@@ -202,9 +271,9 @@
 
                         <p class="form__eurosText">Type of payment</p>
 
-                        <div class="form__paymentStyle">  
+                        <div class="form__paymentStyle">
                             <input class="form__paymentImput" type="radio" name="pago" value="creditodebito">
-                            <label class="form__label"  for="creditodebito">Credit or debit</label>
+                            <label class="form__label" for="creditodebito">Credit or debit</label>
                         </div>
 
 
@@ -236,10 +305,8 @@
 
             </article>
 
-
-
-
         </main>
+
 
         <footer class="footer">
             <ul class="footer__links">
@@ -251,5 +318,15 @@
 
 </body>
 
+<script>
+    document.querySelectorAll('[data-target]').forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const target = event.target.dataset.target;
+            const section = document.querySelector(`[data-section="${target}"]`);
+            section.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>
 
 </html>
