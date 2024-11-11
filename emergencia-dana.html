@@ -249,25 +249,30 @@
 
                 </section>
 
-                
-                <section class="section__faq">
+
+                <section class="section__faq" data-section="faq">
 
                     <h2 class="list__faq-h2"> Frequent Answers for volunteers </h2>
 
-                    <p class="list__faq-subtitle"> Some information may be of interest to you! Remember: first take care of yourself so you can take care of others. </p>
+                    <p class="list__faq-subtitle"> Some information may be of interest to you! Remember: first take care
+                        of yourself so you can take care of others. </p>
 
                     <ul class="list__faq">
                         <li class="list__faq-items">
                             <h3 class="list__faq-h3">Where can I go to help? </h3>
-                            <p class="list__faq-answers"> Select one of the most affected areas and chek where is the town hall, there people'll let you know what you can do.                            </p>
+                            <p class="list__faq-answers"> Select one of the most affected areas and chek where is the
+                                town hall, there people'll let you know what you can do. </p>
                         </li>
                         <li class="list__faq-items">
                             <h3 class="list__faq-h3">What do I need to bring? </h3>
-                            <p class="list__faq-answers"> Basic items are: Comfortable clothing and footwear, preferably long. Your own food and drink. Gloves, masks and protection glasses. </p>
+                            <p class="list__faq-answers"> Basic items are: Comfortable clothing and footwear, preferably
+                                long. Your own food and drink. Gloves, masks and protection glasses. </p>
                         </li>
                         <li class="list__faq-items">
                             <h3 class="list__faq-h3">Can I enter the affected town with my car? </h3>
-                            <p class="list__faq-answers"> The streets are cut into circulation. Als: vehicles can block the streets, making cleaning and rescue difficult. Your vehicle can be damaged because of broken material, for example: crystal. 
+                            <p class="list__faq-answers"> The streets are cut into circulation. Als: vehicles can block
+                                the streets, making cleaning and rescue difficult. Your vehicle can be damaged because
+                                of broken material, for example: crystal.
                             </p>
                         </li>
                     </ul>
@@ -341,14 +346,22 @@
 </body>
 
 <script>
+
     document.querySelectorAll('[data-target]').forEach(link => {
         link.addEventListener('click', (event) => {
+
             event.preventDefault();
+
             const target = event.target.dataset.target;
+
             const section = document.querySelector(`[data-section="${target}"]`);
-            section.scrollIntoView({ behavior: 'smooth' });
+
+            section.scrollIntoView({ behavior: 'smooth',
+             });
+           
         });
     });
+
 </script>
 
 </html>
