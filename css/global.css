@@ -3,10 +3,6 @@
     src: url('./fonts/worksans-black.ttf') format('truetype');
 }
 
-/* @font-face {
-    font-family: 'Space Grotesk';
-    src: url('./fonts/spacegrotesk-medium.otf') format('truetype')     
-} */
 
 html {
     font-size: 12px;
@@ -809,7 +805,7 @@ h3 {
     }
 
     .call-action__img {
-       margin-top: 8rem;
+    margin-top: 8rem;
     }
     
 
