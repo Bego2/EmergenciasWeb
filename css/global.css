@@ -124,8 +124,6 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-
 }
 
 
@@ -177,6 +175,7 @@ html {
     border-radius: 12px;
     overflow: hidden;
 }
+
 
 
 /* Tarjeta parte izq */
@@ -272,8 +271,6 @@ html {
 }
 
 .cards__find-more {
-    display: flex;
-    justify-content: center;
     font-size: 1.2rem;
     margin: 2rem 0rem 3rem 0rem;
 }
@@ -307,8 +304,9 @@ html {
     color: #fef7f1;
 }
 
-/* DANA PAGE · DANA PAGE · DANA PAGE */
 
+
+/* DANA PAGE · DANA PAGE · DANA PAGE */
 
 /* HEADER DANA */
 
@@ -326,8 +324,6 @@ html {
     display: flex;
     flex-direction: column;
 }
-
-
 
 .header__dana-advice {
     display: flex;
@@ -423,7 +419,8 @@ html {
 .cards__centers {
     display: flex;
     flex-direction: row;
-    margin: 1rem 1rem 1.5rem;
+    margin-top: 1rem;
+    /* margin: 1rem 1rem 1.5rem; */
 
 }
 
@@ -431,7 +428,7 @@ html {
     background-color: #fef7f1;
 }
 
-/* Tarjeta parte izquierda */
+  /* Cards 1: PAIPORTA  */ 
 
 .cards__izquierda {
     display: flex;
@@ -480,7 +477,7 @@ strong {
     text-decoration: underline;
 }
 
-/* Cards version 2: CATARROJA  */
+/* Cards 2: CATARROJA  */
 .cards__izquierda.cards__izquierda--2 {
     background-color: #593436;
 
@@ -491,7 +488,7 @@ strong {
 
 }
 
-/* Cards version 2: SEDAVÍ  */
+/* Cards 3: SEDAVÍ  */
 .cards__izquierda.cards__izquierda--3 {
     background-color: #C6C54D;
 
@@ -500,6 +497,58 @@ strong {
 .cards__txt.cards__txt--3 {
     color: #593436;
 }
+
+
+/* FREQUENT ANSWERS */
+
+.section__faq {
+    margin-top:  1.5rem;
+    margin-bottom:  1.5rem;
+}
+
+
+.list__faq-h2 {
+    display: flex;
+font-size: 3rem;
+margin-bottom: 1rem;
+
+}
+
+.list__faq-subtitle {
+    font-size: 1.2rem;
+    margin-bottom:  1.5rem;
+}
+
+.list__faq {
+    display: flex;
+    flex-direction: column;
+}
+
+.list__faq-items{
+margin-bottom: 1.5rem;
+background-color: #fef7f1;
+border-radius: 20px;
+list-style: none;
+padding: 1.5rem;
+
+}
+
+
+.list__faq-h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+margin-left: 0px;
+    background-color: #fef7f1;
+    border-radius: 20px;
+}
+
+.list__faq-answers {
+    font-size: 1.5rem;
+    background-color: #fef7f1;
+}
+
+
+
 
 
 /* DONATION FORM */
@@ -616,7 +665,45 @@ strong {
 }
 
 
-/* -> ASIDE */
+/* <- ASIDE · INDEX */
+
+.aside__index {
+    background-color: #fef7f1;
+    height: 220px;
+    border-radius: 10px;
+    padding: 1.2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aside__h3 {
+    background-color: #fef7f1;
+    font-size: 23px;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.span__filters {
+    background-color: #fef7f1;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: center;
+}
+
+.fa.fa-times-circle-o {
+    background-color: #fef7f1;
+    margin-right: 1rem;
+}
+
+.span__filter-txt {
+    background-color: #fef7f1;
+}
+
+
+/* <-  ASIDE · DANA PAGE */
 
 
 .nav__intern {
@@ -668,14 +755,18 @@ h3 {
         margin: 2rem;
     }
 
-    aside {
-        display: none;
-    }
-
     .cards__grid {
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .aside__index {
+        display: none;
     }
 }
 
@@ -683,6 +774,13 @@ h3 {
 
 /* IPAD & DESKTOP */
 @media (min-width: 768px) {
+
+    .grid__index {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
 
     .header__fixed {
         padding: 0rem 1rem;
@@ -761,7 +859,6 @@ h3 {
 
     .cards__find-more {
         font-size: 1.5rem;
-
     }
 
     .footer__links {
